@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Muhammed Tastan">
+    <meta name="Description" content="Muhammed Tastan redesigned hjemmeside">
+    <meta name="Keywords" content="Anders Børjesson, Borjesson, Boerjesson, datalog, JSP, servlet, Roskilde Handelsskole, datamatiker, DMU">
+    <title>Redesign af Anders Børjessons hjemmeside</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/misc/abstyle.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex: 1;
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .top-text {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .center {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .info-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+            .info-table td {
+                vertical-align: top;
+                padding: 10px;
+            }
+
+        .teaching-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .teaching-info .card {
+                margin: 10px;
+                flex-basis: calc(33.33% - 20px);
+                padding: 20px;
+                background-color: #ffffff;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out;
+                cursor: pointer;
+            }
+
+                .teaching-info .card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .teaching-info .card h3 {
+                    font-size: 22px;
+                    margin: 10px 0;
+                    font-weight: bold;
+                    color: #343a40;
+                }
+
+                .teaching-info .card a {
+                    color: #343a40;
+                    text-decoration: none;
+                    transition: color 0.3s ease-in-out;
+                    display: block;
+                    padding: 5px 0;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+
+                    .teaching-info .card a:first-child {
+                        margin-top: 10px;
+                    }
+
+                    .teaching-info .card a:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .teaching-info .card a:hover {
+                        color: #007bff;
+                    }
+
+        .btn-cv {
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+            .btn-cv:hover {
+                background-color: #343a40;
+            }
+
+        .bottom-text {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 18px;
+        }
+
+            .bottom-text a {
+                color: #ffffff;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+                .bottom-text a:hover {
+                    color: #007bff;
+                }
+    </style>
+</head>
+<body>
+    <div class="top-text">
+        <a href="https://www.zealand.dk/" style="color: #ffffff; text-decoration: none;">Erhvervsakademi Sjælland</a>
+    </div>
+    <div class="container">
+        <div class="center">
+            <strong>
+                Anders Børjesson (anbo)<br>
+                Cand.scient. i matematik og datalogi<br>
+                Lektor på Datamatikeruddannelsen<br>
+                Zealand, Sjællands Erhvervsakademi, Roskilde
+            </strong>
+        </div>
+        <table class="info-table">
+            <tr>
+                <td>
+                    Addresse (Arbejde):<br>
+                    Maglegårdsvej 2, 4000 Roskilde<br>
+                    E-mail (Arbejde) anbo@zealand.dk
+                </td>
+                <td style="text-align: right;"><a href="https://anbo-easj.dk/cv/" class="btn-cv">CV</a></td>
+            </tr>
+        </table>
+        <hr style="margin-top: 0;">
+        <div class="teaching-info">
+            <div class="card">
+                <strong></strong><h3>Teaching autumn 2019</h3>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQnP5GDXd2YmuUapbnNgaUAK-4gsDtZGDl-qZT-g3xsUCSvPhfr1OTdo7esf_b3qm3ypfQSwMuz5Mab/pub">Programmering 3rd semester, Datamatiker</a>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQSdR7ZSr7DfFCc8SC0tSqz8VaLKHN8LCGRmfxTFVnl1GgkHnk_Wr_-7r_Lr5EX-qpOt7sBzo6SmHH0/pub">Mobile Application Development, 4th semester Computer Science</a>
+                <a href="https://anbo-easj.dk/internship/index.html">Internship, 5th semester, Computer Science</a>
+                <a href="https://anbo-easj.dk/dissertation2020spring/">Dissertation course</a>
+                <p>Dissertations, Computer Science</p>
+            </div>
+            <div class="card" onclick="window.location.href='https://docs.google.com/document/d/e/2PACX-1vQnP5GDXd2YmuUapbnNgaUAK-4gsDtZGDl-qZT-g3xsUCSvPhfr1OTdo7esf_b3qm3ypfQSwMuz5Mab/pub'">
+                <strong></strong><h3>Teaching spring 2019</h3>
+                <a href="https://anbo-easj.dk/mobile2019spring/index.html">Mobile Application Development, 4th semester Computer Science</a>
+                <a href="https://anbo-easj.dk/internship/index.html">Internship, 5th semester, Computer Science</a>
+                <a href="https://anbo-easj.dk/dissertation2019spring/">Dissertation course</a>
+                <p>Dissertations, Computer Science</p>
+            </div>
+            <div class="card">
+                <strong></strong><h3>Teaching autumn 2018</h3>
+                <a href="https://anbo-easj.dk/prog3_2018autumn/index.html">Programming, 3rd semester, Computer Science</a>
+                <a href="https://anbo-easj.dk/mobile2018autumn/index.html">Mobile Application Development, 4th semester Computer Science</a>
+                <a href="https://anbo-easj.dk/internship/index.html">Internship, 5th semester, Computer Science</a>
+                <a href="https://anbo-easj.dk/dissertation2018autumn/">Dissertation course</a>
+                <a href="https://anbo-easj.dk/undervisning/">Previous semesters</a>
+                <p>Dissertations, Computer Science</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-text">
+        <a href="https://anbo-easj.dk/bekendtgoerelser/">Bekendtgørelser om datamatiker-uddannelsen, eksamen og lign.</a> |
+        <a href="https://anbo-easj.dk/index.htm">Index</a>
+    </div>
+</body>
+</html>
